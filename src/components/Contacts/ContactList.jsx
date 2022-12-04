@@ -1,7 +1,7 @@
 import { Contacts } from './Contacts';
 import css from './Contacts.module.css';
 
-import { setFilter } from '../../redux/filtersSlice';
+import { setFilter } from '../../redux/contacts/filtersSlice';
 import { useDispatch } from 'react-redux';
 
 export const ContactList = () => {

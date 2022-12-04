@@ -1,11 +1,11 @@
 import css from './Contacts.module.css';
 import { useSelector } from 'react-redux';
-import { getContacts } from '../../redux/selectors';
-import { getFilter } from '../../redux/selectors';
+import { getContacts } from '../../redux/contacts/selectors';
+import { getFilter } from '../../redux/contacts/selectors';
 
 import { useDispatch } from 'react-redux';
 
-import { deleteContact } from '../../redux/operations';
+import { deleteContact } from '../../redux/contacts/operations';
 
 const getVisibleContacts = (contacts, filter) => {
   if (filter.length === 0) {
