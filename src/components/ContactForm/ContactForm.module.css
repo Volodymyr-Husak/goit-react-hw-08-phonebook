@@ -1,0 +1,33 @@
+.form {
+    border: 1px solid;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgb(181, 219, 207);
+}
+
+
+.btn {
+    cursor: pointer; 
+    border-radius: 5px; 
+    font-size: 20px;
+    margin: 0 auto;
+    display: block;
+    background-color: rgb(210, 211, 201);
+    padding: 10px;
+}
+.btn:hover {
+    background-color: rgb(125, 125, 156);
+} 
+
+label {
+    display: block;
+    margin-bottom: 30px;
+}
+
+input {
+    display: block;
+    width: 300px;
+    height: 30px;
+    font-size: 20px;
+}
+
