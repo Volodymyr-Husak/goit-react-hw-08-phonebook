@@ -34,10 +34,10 @@ export const Contacts = () => {
 
   const visibleContacts = getVisibleContacts(contacts, filter);
 
-  return visibleContacts.map(({ name, phone, id }) => (
+  return visibleContacts.map(({ name, number, id }) => (
     <li className={css.contact_item} key={id}>
       <span>
-        &#10032; {name}: {phone}
+        &#10032; {name}: {number}
       </span>
       <button className={css.btn} onClick={handleDelete} id={id}>
         Delete
