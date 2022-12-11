@@ -24,10 +24,8 @@ import {
   REGISTER,
 } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
-// import { tasksReducer } from './tasks/slice';
 import { contactsReducer } from './contacts/contactsSlice';
 import { filterReducer } from './contacts/filtersSlice';
-// import { authReducer } from './auth/slice';
 import { authReducer } from './auth/slice';
 
 const middleware = [
