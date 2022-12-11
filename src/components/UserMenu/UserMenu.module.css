@@ -1,9 +1,15 @@
 .wrapper {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 8px;
 }
 
-.username {
+.user_text {
     font-weight: 700;
+    color: rgb(255, 166, 0)
+}
+
+.user_name {
+    font-weight: 700;
+    color:rgb(255, 255, 255)
 }

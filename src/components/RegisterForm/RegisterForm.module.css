@@ -7,3 +7,6 @@
     flex-direction: column;
     margin-bottom: 16px;
 }
+.color_red {
+    color: red;
+}

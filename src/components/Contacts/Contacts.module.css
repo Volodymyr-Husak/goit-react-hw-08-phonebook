@@ -12,14 +12,10 @@
 }
 
 .contact_item{
-    display: flex;
-    min-width: 300px;
-    align-items: center;
-    justify-content:space-between;
     border: 1px solid;
     border-radius: 5px;
     padding: 5px;
-    background-color: rgb(189, 197, 169);
+    background-color: rgb(95, 169, 182);
 }
 .contact_item:not(:last-child){
     margin-bottom: 5px;
@@ -35,3 +31,27 @@
     background-color: rgb(209, 69, 69);
 }
 
+.contacts__input {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 10px;
+        border-color: #FFFFFF #327CB5 #327CB5 #FFFFFF;
+        border-radius: 10px 10px 10px 10px;
+        border-style: solid;
+        border-width: 1px;
+        box-shadow: 1px 1px 3px #333333;
+        cursor: pointer;
+        font-weight: bold;
+        padding: 5px;
+        text-align: center;
+}
+
+.contacts__quantity {
+    color: tomato;
+}
+
+.contacts__title {
+    text-align: center;
+    margin-bottom: 10px;
+}

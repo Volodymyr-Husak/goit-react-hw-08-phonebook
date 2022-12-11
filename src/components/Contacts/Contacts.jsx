@@ -7,6 +7,13 @@ import { useDispatch } from 'react-redux';
 
 import { deleteContact } from '../../redux/contacts/operations';
 
+import ListItem from '@mui/material/ListItem';
+import ListItemAvatar from '@mui/material/ListItemAvatar';
+import Avatar from '@mui/material/Avatar';
+import IconButton from '@mui/material/IconButton';
+import DeleteIcon from '@mui/icons-material/Delete';
+import MdPhone from '@mui/icons-material/Phone';
+
 const getVisibleContacts = (contacts, filter) => {
   if (filter.length === 0) {
     return contacts;
@@ -35,13 +42,29 @@ export const Contacts = () => {
   const visibleContacts = getVisibleContacts(contacts, filter);
 
   return visibleContacts.map(({ name, number, id }) => (
-    <li className={css.contact_item} key={id}>
+    <ListItem
+      key={id}
+      className={css.contact_item}
+      secondaryAction={
+        <IconButton
+          edge="end"
+          aria-label="delete"
+          onClick={handleDelete}
+          id={id}
+        >
+          <DeleteIcon />
+        </IconButton>
+      }
+    >
+      <ListItemAvatar>
+        <Avatar>
+          <MdPhone color="info" />
+        </Avatar>
+      </ListItemAvatar>
       <span>
-        &#10032; {name}: {number}
+        {' '}
+        {name}: {number}
       </span>
-      <button className={css.btn} onClick={handleDelete} id={id}>
-        Delete
-      </button>
-    </li>
+    </ListItem>
   ));
 };
